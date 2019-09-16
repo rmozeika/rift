@@ -56,6 +56,8 @@ module.exports = {
                   path.resolve(__dirname, 'node_modules/react-native-web'),
                   path.resolve(__dirname, 'node_modules/react-native-tab-view'),
                   path.resolve(__dirname, 'node_modules/static-container'),
+                  path.resolve(__dirname, 'node_modules/react-native-ui-kitten'),
+
       
                 ],
                 loader: require.resolve('babel-loader'),
@@ -89,7 +91,7 @@ module.exports = {
         })
       ],
     output: {
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, 'dist.web'),
         filename: '[name].bundle.js'
     },
     devtool: 'source-map',
