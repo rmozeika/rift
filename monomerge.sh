@@ -1,0 +1,1 @@
+rsync -av --progress --delete ../../mono/packages/rift/. .  --cvs-exclude --exclude node_modules --exclude package.json --exclude package-lock.json --exclude ios --exclude .git-backup
